@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dark="false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76c8772426.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather JS</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="message"></div>
+        <i class="fa-solid fa-sun" id="themeBtn"></i>
+    </div>
+    
+    <div class="search-container-all">
+        <div class="search-container">
+            <input type="search" name="city" id="city-input" maxlength="30">
+            <button type="button" id="city-btn">search</button>
+        </div>
+    </div>
+    <div class="allCard">
+        
+        <div class="your-position-container">
+            <h2 class="pos-tit"><i class="fa-solid fa-location-dot"></i>Your position</h2>
+            <div class="info" id="originPosition">
+                <div class="desc">
+                    <h3 id="description"><img src="icon/loading.svg" alt="loading"></h3>
+                    <img src="http://openweathermap.org/img/wn/@2x.png" alt="weather" style="opacity: 0;">
+                </div>
+                <div class="all-weather">
+                    <div class="title">
+                        <h1 id="city"><img src="icon/loading.svg" alt="loading"></h1>
+                        <span id="county"><img src="icon/loading.svg" alt="loading"></span>
+                    </div>
+                    <h1 id="temp"><img src="icon/loading.svg" alt="loading"></h1>
+                </div>
+                <div class="card-footer">
+                    <div class="footer-left footer-item">
+                        <div class="footer-value">
+                            <i class="fa-solid fa-wind"></i>
+                            <span class="wind value"><img src="icon/loading.svg" alt="loading"></span><h3>m/s</h3>
+                        </div>
+                        <span class="footer-title">Wind speed</span>
+                    </div>
+                    
+                    <div class="footer-right footer-item">
+                        <div class="footer-value">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span class="humidity value"><img src="icon/loading.svg" alt="loading"></span><h3>%</h3>
+                        </div>
+                        <span class="footer-title">humidity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
